@@ -1,0 +1,86 @@
+#import factorial
+import fact
+c=15
+print(fact.f(5),fact.g,fact.c,c,fact.cil(4,5))
+
+def f(n):
+    f=1
+    while n>1:
+        f*=n
+        n-=1
+    return f
+
+g=65
+c=g+39
+
+def cil(a,h):
+    import math
+    s=2*math.pi*a*h
+    return s
+
+
+from fact import cil, f,g,t
+c=15
+##print(fact.f(5),fact.g,fact.c,c,fact.cil(4,5))//1-zholy
+print(cil(4,5), f(7),c,g,t)//2-zholy
+
+#import fibonacci
+##def fib(n):
+##    if n==1 or n==2:
+##        return 1
+##    return fib(n-2)+fib(n-1)
+
+
+def fib(n):
+    fib1=fib2=1
+    i=0
+    while i<n-2:
+        f=fib1+fib2
+        fib1=fib2
+        fib2=f
+        i+=1
+
+##import m
+##print(m.fib(int(input('n:'))))
+
+##from m import fib
+##print(fib(int(input('n:'))))
+
+import m
+print(m.fib(int(input('n:'))))
+
+##from m import fib
+##print(fib(int(input('n:'))))
+
+    return fib2
+
+
+# Fibonacci numbers module
+
+def fib(n):    # write Fibonacci series up to n
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+
+def fib2(n):   # return Fibonacci series up to n
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
+
+##import fact as factorial
+##print(factorial.f(8))
+
+##from fact import f as factr
+##print(factr(5))
+
+##import fact,m
+##print(fact.f(5),m.fib(8))
+
+from fact import*
+print(f(5),cil(8,102),g,t)
+

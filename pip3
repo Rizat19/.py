@@ -1,0 +1,149 @@
+login:TechStar password: TechStar2019
+
+pip3 install azt
+ version:azt-0.0.7
+sudo apt install python3-pip  
+pip3 install jupyterlab
+
+   # this is comment in Python
+
+ 
+ 
+////////////////1 print()
+name=input('what is your name?\n')
+print('Hello '+name)
+print('Hello',name)  utir srazy space beredy 
+
+ input()
+#input()
+username=input('username:')
+password=input('password:')
+
+/////////////////2
+
+print(username,        password)# kop bos oryn zhazsanda baribir 1-eu ak space beredi
+
+#format  
+
+#1 -way formatting
+name=input('name:')
+age=input('age:')
+job=input('job:')
+
+#docstring triple quote
+info='''...........info of...........'''+'''
+Name:'''+name+'''
+Age:'''+age+'''
+Job:'''+job
+
+print(info)
+
+
+#2-way formatting %
+name=input('name:')
+job=input('job:')
+age=int(input('age:'))
+
+info='''...........info of...........
+Name:%s
+Age:%d
+Job:%s'''%(name,age,job)
+print(info)
+
+#3-way formatting
+name=input('name:')
+age=int(input())
+job=input('job:')
+
+info=''' ------------info of-----------
+Name:{_name}
+Age:{_age}
+Job:{_job}'''.format(_name=name,_age=age,_job=job)
+
+print(info)
+
+
+#4-way formatting index
+name=input('name:')
+age=int(input())
+job=input('job:')
+
+info=''' ------------info of-----------
+Name:{0}
+Age:{1}
+Job:{2}'''.format(name,age,job)
+
+print(info)
+
+
+
+
+#5-way formatting , it is very easy
+name=input('name:')
+age=int(input())
+job=input('job:')
+
+info=''' ------------info of-----------
+Name:{}
+Age:{}
+Job:{}'''.format(name,age,job)
+
+print(info)
+
+////////////////3
+#password shell-ge korinbeitin
+#getpass
+#import getpass
+
+#pwd-password // print working directory
+#usr -username
+import getpass
+usr=input('Input your username:')
+pwd=getpass.getpass('plz input your pwds:')
+print(usr,pwd)
+
+////////4 increment
+_username='Nur'
+_password='abc'
+# _ desen secretniy
+username=input('username:')
+password=input('password:')
+if _username==username and _password==password:
+    print('Welcome user {} login to AzatAI!\n'.format(username))
+    #print('Welcome user {} login to AzatAI!\n').format(username) #dep zhassa bolady
+else:
+    print('Invalid username or password')
+
+/////////5
+ainymaly datany saktau ushin kerek
+assign- korsety
+#stringpointer
+print('Hello AzatAI')
+name="Nurzhan"
+name2=name
+print(name)
+print("My name is",name,name2)
+name="Darkhan"
+print("My name is",name,name2)#memory
+print("hello")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+0)pip3-python install package
+
+terminal>> pip3 install azt
+sudo apt install python3-pip
+pip3 install jupyterlab #jupyterlab деп thonny pycharm да жазылған нарсе гой
+
+0.1) # this is comment in Python
+
+1)print()
+print('Hello world')
+name=input('What is your name?:')
+print('Hello '+name)
+#What is your name?: Rizat
+#Hello Rizat
+ 
+print('Hello',name)# , automatty turde space(bos oryn)beredi
+#What is your name?:Rizat
+#Hello Rizat
+
+2)input_output
+name=input('your name:')
+
+print('Hello',                          name) #деп берсеңде биреу ак бос орын береді
+output- бир жерге шыгару
+
+3)
+форматтау турлері:
+5-форматтау түрлері бар: 
+-----------1-форматтау турі: 
+docstring ішінде + деп істейміз:  
+docstring деп ''' ''' triple quote ішінде жазылған нарселер
+name=input('what is your name?:')
+age=input('age:')
+job=input('job:')
+info='''......................info of..................'''
+Name:'''+name+'''
+Age:'''+age+'''
+Job:'''+job
+print(info)
+
+------------2-форматтау турі:
+docstring ішінде %s -string %d-digit деп жазу
+name=input('what is your name?:')
+age=int(input('age:'))
+job=input('job:')
+info='''......................info of..................
+Name:%s
+Age:%d
+Job:%s'''%(name,age,job)
+print(info)
+
+--------------3-форматтау турі:
+doctring ішінде underscore-мен жазамыз 
+a:{_a}'''.format(_a=name}
+name=input('what is your name?:')
+age=input('age:')
+job=input('job:')
+info='''......................info of..................
+Name:{_name}
+Age:{_age}
+Job:{_job}'''.format(_name=name,_age=age,_job=job)
+print(info)
+
+---------4-форматтау түрі:
+docstring ішінде индекспен {0} деп бастаймыз
+a:{0}'''.format(name)
+name=input('what is your name?:')
+age=input('age:')
+job=input('job:')
+
+info='''...............info of...........
+Name:{0}
+Age:{1}
+Job:{2}'''.format(name,age,job)
+
+print(info)
+
+-------------5-форматтау түрі:
+docstring ішінде пустой {} жазамыз 
